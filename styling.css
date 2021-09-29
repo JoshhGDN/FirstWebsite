@@ -1,0 +1,195 @@
+/* universal background color */
+html, body {
+    background-color: white;
+    font-family: monospace;
+    background-image: url("mountain.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+
+}
+/* P1 classes here */
+.p1-index {
+    position: fixed; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    font-size: 15px;
+    text-align: justify;
+    color: #000000;
+}
+.p1-index:hover {
+    background-color: #000000;
+    color: black;
+    transition: all .5s;
+}
+.p1-index:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+/* Containers, Container Lists, and Container Animations */
+.container {
+    position: absolute;
+    top: 35%;
+    transform: translateX(-0%);
+    padding: 0 0px;
+    font-size: 20px;
+}
+/* Middle of the Page and Effects */
+.middle-page {
+    position: fixed; 
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    color: #000000;
+    font-size: 20px;
+}
+.middle-page:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .5s;
+}
+.middle-page:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.containerlist-b2 {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 10%;
+}
+.containerlist-b2:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .5s;
+}
+.containerlist2-b2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.containerlist2-b2 {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+}
+.containerlist2-b2:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .5s;
+}
+.containerlist2-b2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.containerlist3-b2 {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 70%;
+}
+.containerlist3-b2:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .5s;
+}
+.containerlist3-b2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Header Placement */
+.header {
+    text-align: center;
+    font-style: oblique;
+    font-size: 90%;
+    text-decoration: underline
+}
+/* Body Hover Effects and Placement */
+.body::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+.body:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+/* List customization */
+li {
+    display: inline-block;
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+/* News HomePage */
+.news-homePage {
+    position: absolute;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.news-homePage:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .5s;
+}
+.news-homePage:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.center-ksu {
+    text-align: center;
+    margin-left: 9%;
+    width: 50%;
+}
+/* Link Customization - About Us page */
+.body2-resources {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    font-size: 30px;
+}
+.body2-resources:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .5s;
+}
+.body2-resources:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.body2-about {
+    color: white;
+    
+}
+/* Textfield and Label Styling */
+.textfield {
+    width:500px;
+    font-size: 15px;
+    
+}
+.input[type = text] {
+    width: 10px;
+    border-radius: 150px;
+
+}
+label {
+    text-align:justify;
+    padding-right:40px;
+    display:inline-block;        
+    min-width:150px;
+}
+

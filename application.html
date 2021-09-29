@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "styling.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div class = "header">
+    <h1 class = "h1-application"> 
+    Center for Applied Research in Information Technology
+    </h1>
+    </div>        
+    <body1 class = "body1-application">
+        <div class = "container">
+        <li>
+            <a href = "index.html" class = "body"> Home </a>
+        </li>
+            <br>
+        <li>
+            <a href = "resources.html"  class = "body"> Resources </a>
+        </li>
+            <br>
+        <li>
+            <a href = "about.html" class = "body"> About Us </a>
+        </li>
+        </div>
+    </body1>
+    <div class = "middle-page">
+        <div class = "textfield">
+    <body2>
+        Thank you for your interest in our CARIT Program. This is an internship opportunity for students with the right classes and GPA requirements to further
+        their academic goals. Quickly fill out this form and submit in order to send in your application for review.
+        <br>
+        <br>
+            Graduate Level: 
+            <select id = "studentType" onchange="displayCourse()"> 
+            <option selected> Please Select </option> 
+            <option > Undergraduate </option> 
+            <option > Graduate </option>
+            </select>
+            <button input type = "button" onClick = "calculateAvg()"> Calculate </button>
+            <div id = "result"> </div> 
+            </div>
+        <form id = "option1">
+            Name: <input type = "text" id = "name" size = "25"> 
+            <br>
+            Class 1: <input type = "text" id = "class1" value = "CSE 3203 Mobile System Overview" size = "50">
+            <select id = "undergradClass1Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 2: <input type = "text" id = "class2" value = "IT 4213 Mobile Web Development" size = "50">
+            <select id = "undergradClass2Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 3: <input type = "text" id = "class3" value = "IT 3212 Database Systems" size = "50">
+            <select id = "undergradClass3Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 4: <input type = "text" id = "class4" value = "4232 Ethical Domains" size = "50">
+            <select id = "undergradClass4Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 5: <input type = "text" id = "class5" value = "IS 4129 Linux Services" size = "50">
+            <select id = "undergradClass5Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            </form>
+            <form id = "option2">
+                Name: <input type = "text" id = "name" size = "25"> 
+            <br>
+            Class 1: <input type = "text" id = "class1" value = "IT 7113 Data Visualization" size = "50">
+            <select id = "graduateClass1Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 2: <input type = "text" id = "class2" value = "IT 6713 Business Intelligence" size = "50">
+            <select id = "graduateClass2Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 3: <input type = "text" id = "class3" value = "IT 3212 Informations Systems" size = "50">
+            <select id = "graduateClass3Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 4: <input type = "text" id = "class4" value = "CSE 1232 Programming Practices 1" size = "50">
+            <select id = "graduateClass4Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+            Class 5: <input type = "text" id = "class5" value = "MATH 1112 Calculus" size = "50">
+            <select id = "graduateClass5Grade">
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> F </option>
+            </select>
+            <br>
+        </form>
+        <script src = "backend.js"></script>
+        <script> 
+            var option1 = document.querySelector('option1').style.display = "none";
+                //option1.style.display = "none";
+            var option2 = document.querySelector('option2').style.display = "none";
+                //option2.style.display = "none";
+        </script>
+        <div id = "result"> </div>
+    </body2>
+    </div>
+
+</html>
